@@ -12406,33 +12406,74 @@ a.text-dark:focus {
   font-size: 1.2rem;
 }
 
+body {
+  background-image: url(/images/london.jpg?058fed3ed90aaafbc21b7e1c0c83a1c9);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+h1 {
+  padding-top: 20px;
+  text-align: center;
+  color: #fff;
+  font-weight: 350;
+  letter-spacing: 12px;
+  margin-top: 0;
+}
+
+hr {
+  width: 80%;
+  border-color: #fff;
+}
+
 #panel {
   /*調整寬度,版面置中*/
   margin: 0 auto;
-  padding: 30px;
-  width: 600px;
-  background-color: lavender;
+  /* padding: 30px; */
+  width: 500px;
+  /* background-color: lavender; */
+}
+
+#log-out {
+  padding-top: 0px;
+  margin: 0;
+  text-align: left;
+  color: #fff;
+  font-size: 1.5rem;
+  letter-spacing: 5px;
 }
 
 #todolist ul {
   /*去邊 去點點 和留白*/
   margin: 0;
-  padding: 0;
+  padding: 0 30px 30px 30px;
   list-style-type: none;
 }
 
 #todolist .checkbox {
   /*做一個圓形和游標*/
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  background-color: #ccc;
   margin-right: 10px;
+  border-radius: 50%;
+  border: 0.5px solid #222;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+#todolist .checkbox:hover {
+  box-shadow: inset 2px 2px 2px rgba(51, 51, 102, 0.3);
 }
 
 #todolist li {
   /*讓他們在同一行*/
   display: flex;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: MintCream;
 }
 
 #todolist li.complete .checkbox {
@@ -12442,11 +12483,21 @@ a.text-dark:focus {
 #todolist li:hover {
   /*pseudo class*/
   background-color: #f8f8f8;
+  box-shadow: 2px 2px 10px 2px rgba(51, 51, 102, 0.3);
 }
 
 #todolist .content {
   /*設成1,自動成長*/
   flex: 1;
+}
+
+#todolist .delete {
+  border-radius: 5px;
+  width: 25px;
+  height: 25px;
+  background-color: rgba(255, 0, 0, 0.7);
+  text-align: center;
+  color: #fff;
 }
 
 #todolist li.complete .content {
@@ -12455,6 +12506,19 @@ a.text-dark:focus {
 
 #todolist .actions > * {
   cursor: pointer;
+}
+
+#todolist .addtodo {
+  margin-right: 15px;
+  border: 0.5px solid #222;
+  border-radius: 5px;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+}
+
+#todolist .addtodo:hover {
+  box-shadow: 2px 2px 10px 2px rgba(51, 51, 102, 0.3);
 }
 
 .hide {
