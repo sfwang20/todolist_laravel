@@ -1,0 +1,57 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+@import '~jquery-ui/themes/base/all.css';
+
+.navbar-nav {
+  text-align: right;
+  font-size: 1.2rem;
+}
+
+#panel {     /*調整寬度,版面置中*/
+  margin: 0 auto;
+  padding: 30px;
+  width: 600px;
+  background-color: lavender;
+}
+
+#todolist ul { /*去邊 去點點 和留白*/
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+#todolist .checkbox { /*做一個圓形和游標*/
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: #ccc;
+  margin-right: 10px;
+}
+#todolist li {   /*讓他們在同一行*/
+  display: flex;
+}
+#todolist li.complete .checkbox {
+  background-color: #777;
+}
+#todolist li:hover {  /*pseudo class*/
+  background-color: #f8f8f8;
+}
+#todolist .content {   /*設成1,自動成長*/
+  flex: 1;
+}
+#todolist li.complete .content {
+  text-decoration: line-through;
+}
+#todolist .actions >* {
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
