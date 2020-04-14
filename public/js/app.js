@@ -52240,8 +52240,7 @@ window.$ = window.jQuery = jquery__WEBPACK_IMPORTED_MODULE_0___default.a;
 jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
   //$(this)等同$(e.currentTarget)
   var source = jquery__WEBPACK_IMPORTED_MODULE_0___default()('#todolist_template').html();
-  var todoTemplate = Handlebars.compile(source);
-  console.log(todos); //prepare all todo list items
+  var todoTemplate = Handlebars.compile(source); //prepare all todo list items
 
   var todolistUI = '';
   jquery__WEBPACK_IMPORTED_MODULE_0___default.a.each(todos, function (index, todo) {
@@ -52476,8 +52475,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/shinfu/Documents/todolist_Laravel/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Users/shinfu/Documents/todolist_Laravel/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /Users/shinfu/Documents/todolist_l/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Users/shinfu/Documents/todolist_l/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
