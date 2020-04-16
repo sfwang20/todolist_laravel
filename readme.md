@@ -4,7 +4,7 @@
 
 ### Website
 
-http://todolist.shinfu.website
+http://todolistl.shinfu.website
 
 ### 功能
 
