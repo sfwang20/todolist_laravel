@@ -117,17 +117,12 @@ $(document).ready(function(){              //$(this)等同$(e.currentTarget)
   $('#todolist').find('ul').sortable({
     items: "li:not(.new)",
     stop: function(){
-
-      var orderpair = [];
       $('#todolist').find('li:not(.new)').each(function(index, li){
-
           var id = $(li).data('id');
           let sortUrl = '/todos/order/' + id;
           var order = index +1;
           $.post(sortUrl, {_method:'put', order: order});
-
       });
-
     },
   });
 });
