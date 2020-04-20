@@ -15,10 +15,7 @@ Route::middleware(['auth'])->group(function ()
 {
   //Read
   Route::get('/', 'TodoController@show');
-  // Route::get('/', function () {
-  //     return view('/index');
-  // });
-
+  
   //Create, Update, Delete
   Route::post('/todos', 'TodoController@store');
   Route::put('/todos/{todo}', 'TodoController@update');
