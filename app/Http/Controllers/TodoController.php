@@ -14,7 +14,7 @@ class TodoController extends Controller
   {
       $todos = Auth::user()->todos()->orderBy('order')->get();
 
-      return view('/index', ['todos' => $todos]);
+      return view('index', ['todos' => $todos]);
   }
 
   public function store(Request $request)
